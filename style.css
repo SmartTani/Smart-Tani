@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.container-ul-li {
+    background-color: #597445;
+    height: 55px;
+    width: 100%;  
+    position: absolute;  
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #C1CFA1;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.scroll-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-button:hover {
+    background-color: #A5B68D;
+    transform: scale(1.1);
+}
+.ul-nav {
+    display: flex; 
+    justify-content: end;
+    right: 40px;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.li-nav {
+    list-style-type: none;
+    padding: 6px;
+    margin: 12px;
+
+}
+
+.a-nav {
+    text-decoration: none;
+    color: #e7f0dc;
+}
+
+.li-nav:hover{
+    background-color: #658147;
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.img-logo {
+    position: absolute;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 40px;
+    left: 0;
+}
+
+.container-img {
+    position: relative;
+    top: 9px;
+    left: 75px;
+}
+
+.container-judul {
+    position: absolute;
+    color: #e7f0dc;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    top: 0;
+    font-size: 17px;
+}
+
+.judul {
+    position: relative;
+    top:  15px;
+    left: 130px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #E5E4CC;
+    background-image: url('./image.png');
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.isi .section_text {
+    font-size: 16px;
+    top: 7rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    max-width: 95%;
+}
+
+.isi .section_text h4 {
+    display: flex;
+    padding-left: 10rem;
+}
+
+.isi h1 {
+    text-align: center;
+    padding-top: 142px;
+    font-size: 27px;
+}
+
+#searchbar {
+    width: 40%;
+    margin: auto;
+}
+
+#searchbar input, .sb-btn {
+    width: 75%;
+    border: 0px solid white;
+    border-right: 0px;
+    padding: 10.5px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+#searchbar .sb-btn {
+    float: right;
+    width: 25%;
+    color: white;
+    background: #eeee;
+    border-left: 0px;
+    color: black;
+}
+
+#searchbar .sb-btn:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.isi .gambar1 img {
+    position: relative;
+    width: 290px;
+    height: 280px;
+    top: 4rem;
+    float: left;
+    left: 9rem;
+    margin-right: 1%;
+    border-radius: 50px;
+}
+
+.wave1 img {
+    transform: rotate(180deg);
+    position: relative;
+    top: 9rem;
+    opacity: 40%;
+}
+
+.wave2 img {
+    position: absolute;
+    top: 180vh;
+    opacity: 40%;
+}
+
+.wave3 img {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 224vh;
+    opacity: 40%;
+}
+
+.wave4 img {
+    position: absolute;
+    top: 300vh;
+    opacity: 40%;
+}
+
+/*Layanan 1*/
+.layanan .fitur1 img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 120vh;
+    float: left;
+    left: 93px;
+}
+
+.layanan .fitur1 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    top: 120vh;
+    margin-left: 23rem;
+    position: absolute;
+    color: #698474;
+}
+
+.layanan .fitur1 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 127vh;
+    position: absolute;
+    margin-left: 23rem;
+    max-width: 55%;
+}
+
+.layanan .fitur1 .custom-btn1 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top: 23vh;
+    left: 19rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layanan .fitur1 .custom-btn1:hover {
+    background-color: #218838;
+}
+
+/*Layanan 2*/
+.layanan .fitur2 img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 175vh;
+    float: right;
+    right: 93px;
+}
+
+.layanan .fitur2 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    top: 175vh;
+    margin-right: 20rem;
+    position: absolute;
+    color: #698474;
+    text-align: right;
+    right: 3rem;
+}
+
+.layanan .fitur2 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 182vh;
+    right: 1rem;
+    position: absolute;
+    margin-right: 22rem;
+    max-width: 50%;
+    text-align: right;
+}
+
+.layanan .fitur2 .custom-btn2 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top: 71vh;
+    left: 44rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.layanan .fitur2 .custom-btn2:hover {
+    background-color: #218838;
+}
+
+/*Layanan 3*/
+.layanan .fitur3 img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 235vh;
+    float: left;
+    left: 93px;
+}
+
+.layanan .fitur3 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    top: 236vh;
+    margin-left: 23rem;
+    position: absolute;
+    color: #698474;
+}
+
+.layanan .fitur3 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 243vh;
+    position: absolute;
+    margin-left: 23rem;
+    max-width: 60%;
+}
+
+.layanan .fitur3 .custom-btn3 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top: 129vh;
+    left: 19rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.layanan .fitur3 .custom-btn3:hover {
+    background-color: #218838;
+}
+
+/*Layanan 4*/
+.layanan .fitur4 img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 299vh;
+    float: right;
+    right: 93px;
+}
+
+.layanan .fitur4 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    top: 298vh;
+    margin-right: 20rem;
+    position: absolute;
+    color: #698474;
+    text-align: right;
+    right: 3rem;
+}
+
+.layanan .fitur4 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 305vh;
+    right: 1rem;
+    position: absolute;
+    margin-right: 22rem;
+    max-width: 60%;
+    text-align: right;
+}
+
+.layanan .fitur4 .custom-btn4 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top: 179vh;
+    left: 44rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.layanan .fitur4 .custom-btn4:hover {
+    background-color: #218838;
+}
+
+/*Layanan 5*/
+.layanan .fitur5 .g1 img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 375vh;
+    float: right;
+    right: 70px;
+}
+
+.layanan .fitur5 .g2 img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 375vh;
+    float: left;
+    left: 60px;
+}
+
+.layanan .fitur5 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    top: 210vh;
+    position: relative;
+    color: #698474;
+    text-align: center;
+
+}
+
+.layanan .fitur5 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 373vh;
+    position: absolute;
+    max-width: 48%;
+    text-align: center;
+    left: 20rem;
+}
+
+.layanan .fitur5 .custom-btn4 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top:243vh;
+    left: 32rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.layanan .fitur5 .custom-btn4:hover {
+    background-color: #218838;
+}
+
+/*Plan*/
+.subs {
+    display: flex;
+    top: 275vh;
+    column-gap: 5.5rem;
+    justify-content: center;
+    position: relative;
+}
+
+/*Plan 1*/
+.subs .plan1 {
+    background-color: #ffff;
+    width: 250px;
+    height: 255px;
+    border-radius: 50px;
+}
+
+.subs .plan1 .garis-m {
+    width: 117px;
+    height: 3px;
+    background-color: black ;
+    position: relative;
+    left: 66px;
+    top: 28px;
+    border-radius: 10px;
+}
+
+.subs .plan1 .harga-m {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subs .plan1 h2 {
+    text-align: center;
+    position: relative;
+    top: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subs .plan1 .custom-btn5 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top: 17vh;
+    left: 2.6rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.subs .plan1 .custom-btn5:hover {
+    background-color: #218838;
+}
+
+/*Plan 2*/
+.subs .plan2 {
+    background-color: #ffff;
+    width: 250px;
+    height: 255px;
+    border-radius: 50px;
+}
+.subs .plan2 .garis-b {
+    width: 117px;
+    height: 3px;
+    background-color: black ;
+    position: relative;
+    left: 66px;
+    top: 28px;
+    border-radius: 10px;
+}
+
+.subs .plan2 .harga-b {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subs .plan2 h2 {
+    text-align: center;
+    position: relative;
+    top: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subs .plan2 .custom-btn6 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top: 17vh;
+    left: 2.7rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.subs .plan2 .custom-btn6:hover {
+    background-color: #218838;
+}
+
+/*Plan 3*/
+.subs .plan3 {
+    background-color: #ffff;
+    width: 250px;
+    height: 255px;
+    border-radius: 50px;
+}
+
+.subs .plan3 .garis-t {
+    width: 117px;
+    height: 3px;
+    background-color: black ;
+    position: relative;
+    left: 66px;
+    top: 28px;
+    border-radius: 10px;
+}
+
+.subs .plan3 .harga-t {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subs .plan3 h2 {
+    text-align: center;
+    position: relative;
+    top: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subs .plan3 .custom-btn7 {
+    background-color: #889E81;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    top: 17vh;
+    left: 3rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.subs .plan3 .custom-btn7:hover {
+    background-color: #218838;
+}
+
+/*Footer*/
+footer {
+    background-color: #597445;
+    bottom: 0;
+    position: relative;
+    left: 0;
+    width: 100%;
+    top: 120rem;
+}
+
+.ftr {
+    width: 100%;
+    padding: 10px 10px 1px;
+}
+
+.icontact {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 40px;
+}
+
+.ftr .icontact a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.ftr .icontact a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0,9;
+}
+
+.ftr .icontact a:hover{
+    background-color: #111;
+    transition: .2s ease-in-out;
+}
+
+.ftr .icontact a:hover i{
+    color: white;
+    transition: .1s ease-in-out; 
+}
+
+.ftr .copyright .text {
+    color: white;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ftr h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}

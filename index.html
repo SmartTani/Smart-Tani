@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Navbar-->
+  <div class="container">
+    <div class="container-ul-li">
+        <div class="container-img">
+            <img src="./logonya.png" alt="" class="img-logo">
+        </div>
+        <div class="container-judul">
+            <p class="judul">Smart Tani</p>
+        </div>
+        <ul class="ul-nav">
+            <li class="li-nav" onclick="scrollToFitur()">
+                <a href="#" class="a-nav">Layanan</a>
+            </li>
+            <li class="li-nav" onclick="scrollToSubscription()">
+                <a href="#" class="a-nav">Berlangganan</a>
+            </li>
+            <li class="li-nav" onclick="scrollToContact()">
+                <a href="#" class="a-nav">Kontak Kami</a>
+            </li>
+            <li class="li-nav" onclick="handleClick()">
+                <a href="#" class="a-nav">Masuk</a>
+            </li>
+            <li class="li-nav" onclick="handleClick()">
+                <a href="#" class="a-nav">Daftar</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--Navbar END-->
+
+<!--Page 1-->
+  <div class="isi">
+        <h1>Salam Petani Maju!</h1>
+        <div id="searchbar">
+          <input type="text" placeholder="Cari Sesuatu...">
+          <button class="sb-btn" onclick="handleClick()">CARI</button>
+        </div>          
+        <div class="gambar1">
+          <img src="./7.jpg" alt="gambar1" class="gambar-orang"/>
+        </div>
+        <div class="section_text">
+          <h4 class="title">Smart Tani adalah sebuah teknologi yang memudahkan para petani dalam mengontrol
+            perkebunan mereka. Salah satu kelebihannya adalah semua fitur dan layanan diperbarui secara
+            real-time, sehingga petani tidak perlu khawatir tentang keterlambatan informasi. Selain itu, Smart Tani
+            juga menyediakan berbagai fitur lain seperti pemantauan suhu, pengecekan kelembaban, dan masih banyak
+            lagi. Kami berharap dengan adanya Smart Tani, para petani Indonesia bisa semakin maju dan
+            berkembang dalam memanfaatkan teknologi untuk kebun mereka.</h4>
+        </div>
+    </div>
+</div>
+<!--Page 1 END-->
+
+<!--Page 2-->
+  <div class="wave1">
+    <img src="./wave.svg" alt="wave">
+  </div>
+  <div class="wave2">
+    <img src="./wave2.svg" alt="wave">
+  </div>
+  <div class="wave3">
+    <img src="./wave3.svg" alt="wave">
+  </div>
+  <div class="wave4">
+    <img src="./wave4.svg" alt="wave">
+  </div>
+  <div class="layanan">
+    <div class="fitur1">
+      <img src="./logofitur1-photoaidcom-cropped.jpg" alt="fitur 1">
+      <h1>Pengecekan Suhu</h1>
+      <h4>Fitur pengecekan suhu udara adalah fitur yang memungkinkan pengguna untuk mengetahui suhu udara di lokasi tertentu secara real-time. Pengguna dapat melihat informasi suhu dalam satuan Celsius atau Fahrenheit.</h4>
+      <button class="custom-btn1" onclick="scrollToSubscription()">Coba Sekarang!</button>
+    </div>
+    <div class="fitur2">
+      <img src="./logo fitur2-photoaidcom-cropped.jpg" alt="fitur 2">
+      <h1>Cek Kelembaban</h1>
+      <h4>Fitur pengecekan suhu udara adalah fitur yang memungkinkan pengguna untuk mengetahui suhu udara di lokasi tertentu secara real-time. Pengguna dapat melihat informasi suhu dalam satuan Celsius atau Fahrenheit.</h4>
+      <button class="custom-btn2" onclick="scrollToSubscription()">Coba Sekarang!</button>
+    </div>
+    <div class="fitur3">
+      <img src="./fiturcuaca.png" alt="fitur 3">
+      <h1>Perkiraan Cuaca</h1>
+      <h4>Fitur ini memantau cuaca di lokasi kebun Anda untuk beberapa hari ke depan. Informasi cuaca membantu merencanakan aktivitas seperti penyiraman, pemupukan, atau panen agar dilakukan pada waktu yang tepat. Dapatkan pembaruan cuaca real-time untuk menghadapi perubahan iklim dan menjaga produktivitas kebun tetap optimal.</h4>
+      <button class="custom-btn3" onclick="scrollToSubscription()">Coba Sekarang!</button>
+    </div>
+    <div class="fitur4">
+      <img src="./logotanya.png" alt="fitur 4">
+      <h1>Tanya Ahli</h1>
+      <h4>Dengan fitur ini, Anda bisa langsung berkonsultasi dengan pakar perkebunan. Dapatkan jawaban tentang perawatan tanaman, pengendalian hama, dan teknik irigasi terbaik. Kami pastikan Anda mendapatkan solusi tepat untuk meningkatkan hasil panen dan menjaga kebun tetap subur.</h4>
+      <button class="custom-btn4" onclick="scrollToSubscription()">Coba Sekarang!</button>
+    </div>
+    <div class="fitur5">
+      <div class="g1">
+        <img src="./air.png" alt="fitur 5">
+      </div>
+      <div class="g2">
+        <img src="./pupukrev.png" alt="fitur 5">
+      </div>
+      <h1>Pengingat Air Dan Pupuk</h1>
+      <h4>Fitur ini membantu mengingatkan Anda untuk menyiram tanaman dan memberikan pupuk tepat waktu. Dengan pengingat otomatis yang disesuaikan dengan kebutuhan tanaman, Anda dapat memastikan tanaman selalu mendapatkan perawatan yang tepat untuk tumbuh subur dan sehat sepanjang musim.</h4>
+      <button class="custom-btn4" onclick="scrollToSubscription()">Coba Sekarang!</button>
+    </div>
+  </div>
+<!--Page 2 END-->
+
+<!--Page 3-->
+<div class="subs">
+  <div class="plan1">
+      <h2>Mingguan</h2>
+      <div class="garis-m">.</div>
+      <div class="harga-m"><h2>Rp48.000/Minggu</h2></div>
+      <button class="custom-btn5" onclick="handleClick()">Pilih Paket</button>
+  </div>
+  <div class="plan2">
+      <h2>Bulanan</h2>
+      <div class="garis-b">.</div>
+      <div class="harga-b"><h2>Rp180.000/Bulan</h2></div>
+      <button class="custom-btn6" onclick="handleClick()">Pilih Paket</button>
+  </div>
+  <div class="plan3">
+      <h2>Tahunan</h2>
+      <div class="garis-t">.</div>
+      <div class="harga-t"><h2>Rp750.000/Tahun</h2></div>
+      <button class="custom-btn7" onclick="handleClick()">Pilih Paket</button>
+  </div>
+</div>
+<!--Page 3 END-->
+
+<!--Footer-->
+<footer>
+  <div class="ftr">
+    <h3>Kontak Kami</h3>
+    <div class="icontact">
+      <a href="https://www.instagram.com/smarttani_id"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/6285876090878?text=Halo%20Admin%20Saya%20Ingin%20Bertanya..."><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrDWbMmFMrrFtjhpLRhHtSvqSlxLfMNMKrGpxvpRNDKPKMwWbPdPTSRVGvJWnPnnLrsB"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <div class="copyright">
+      <p class="text">Copyright © Daffa & Bayu 2024</p>
+    </div>
+</div>
+</footer>
+<!--Footer END-->
+
+<button id="scrollTopBtn" class="scroll-button">&#8593</button>
+</body>
+<script src="script.js"></script>
+</html>
